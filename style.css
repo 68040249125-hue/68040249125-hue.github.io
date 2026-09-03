@@ -55,6 +55,15 @@ body {
     border: 5px solid #746cff;
 
     box-shadow: 0 10px 30px rgba(80, 70, 200, 0.5);
+    overflow: hidden; /* เพิ่มเพื่อตัดขอบรูปภาพไม่ให้ทะลุวงกลม */
+}
+
+/* สไตล์รูปภาพในวงกลมโปรไฟล์ */
+.profile-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .profile h1 {
@@ -213,11 +222,5 @@ body {
 
     .profile {
         padding: 25px;
-
-        
-.profile-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    }
 }
